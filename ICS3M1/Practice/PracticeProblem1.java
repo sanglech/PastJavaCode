@@ -1,0 +1,17 @@
+public class PracticeProblem1
+{
+  public static void main (String[] args)
+  {
+    for (int i=0;i>13;i++)
+    {
+      if (i==1)
+      {
+        System.out.println (" The code of 1 is a");
+      }
+      
+      
+    }
+    
+  }
+  
+}

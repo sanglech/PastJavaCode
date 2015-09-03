@@ -1,0 +1,22 @@
+public class DaBeans
+{
+  public static void main (String[] args)
+  { 
+    int days=0;
+    int jelly=231;
+    while (jelly>=0)
+    {
+      days++
+        if(jelly%3=0)
+      {
+        jelly-=6;
+      }
+      if(jelly%5=0)
+      {
+        jelly+=8;
+      }
+      
+    }
+  System.out.println(" Therefore it will take him "+ days + " days for him to finish the jellybeans");
+  }
+}

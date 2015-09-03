@@ -1,0 +1,33 @@
+import java.io.*;
+public class ArrayPractice
+{
+  public static void main (String [] args) throws IOException
+  {
+    int data [] [] = {
+      {3,2,5},
+      {1,4,4,8,13},
+      {9,1,0,2},
+      {0,2,6,3,-1,-8}};
+    
+    int noob= data[1][1];
+    int min=data[1][1];
+       
+    for (int rows=0; rows < data.length ; rows++)
+    {
+      for (int cols=0; cols < data[rows].length ; cols++)
+      {
+        if(data[rows][cols] > noob)
+        {
+          noob=data[rows][cols];
+        }
+        
+        if(data[rows][cols]<noob)
+        {
+          min=data[rows][cols];
+        }
+      }
+    }
+    System.out.println("Max: "+noob);
+     System.out.println("Min: "+min);
+  }
+}

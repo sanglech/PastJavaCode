@@ -1,0 +1,30 @@
+public class IsSecondary
+{
+  public static void main (String[] args)
+  {
+    System.out.println(" Enter your grade ");
+    int grade=ReadLib.readInt();
+    boolean highSchool = School(grade)
+      if(highschool=false)
+    {
+      System.out.println(" You are not in a secondary school ");
+    }
+    else
+    {
+      System.out.println(" YOu are in high school ");
+    }
+  }
+  
+  public static boolean School(int grade)
+  {
+    if (grade > 12||grade < 9)
+    {
+      return false;
+    }
+    else
+    {
+      return true;
+    }
+  }
+}
+      

@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+
+public class Simple extends JFrame
+{
+  public simple()
+  {
+    setSize(300,200);
+    setTitle("Simple");
+    setDeafaultCloseOperation(EXIT_ON_CLOSE);
+  }
+  public static void main(String args[])
+  {
+    Simple simple= new Simple();
+    simple.setVisible(true);
+  }
+}

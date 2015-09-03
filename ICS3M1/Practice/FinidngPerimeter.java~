@@ -1,0 +1,19 @@
+public class FinidngPerimeter
+  
+{
+  public static void main (String[] args)
+    
+  {int len = 5
+    int wid = 4
+    
+    
+    int per = 2*( len + wid )
+    
+    
+    
+    
+  }
+  
+  
+  
+}

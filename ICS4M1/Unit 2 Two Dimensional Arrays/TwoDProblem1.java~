@@ -1,0 +1,21 @@
+public class TwoDProblem1
+{
+    public static void main (String [] args)
+    {
+      int ctr=0;
+      int table [] [] = new int [6] [6];
+         for (int rows = 0 ; rows < 7 ; rows++)
+        {
+           System.out.print ("\n");
+
+            for (int cols = 0 ; cols < 7 ; cols++)
+            {
+                ctr++;
+                table [rows] [cols] = 1 + z;
+                System.out.print (table [rows] [cols] + " \t");
+            }
+        }
+    } // main method
+} // TwoDsample class
+    }
+}

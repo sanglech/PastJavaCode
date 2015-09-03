@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+import java.awt.Toolkit;
+
+public class CenterOnScreen extends JFrame
+{
+  public CenterOnScreen()
+  {
+    setSize(300,200);
+    setTitle("Simple");
+    setDefaultCloseOperation(EXIT_ON_CLOSE);
+    
+    Toolkit toolkit=getToolkit();
+    Dimension size=toolkit.getScreenSize();
+    setLocation= (size.width/2-get.Width()/2,
+                    size.height/2-get.Height()/2);
+  }
+  public static void main(String args[])
+  {
+    CenterOnScreen cos= new CenterOnScreen();
+    cos.setVisible(true);
+  }
+}

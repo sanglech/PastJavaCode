@@ -1,0 +1,47 @@
+import java.awt.*; 
+import java.awt.event.*;
+import javax.swing.*; 
+
+public class TwoButtons extends JFrame implements ActionListener
+{
+  JButton redButton ;
+  JButton grnButton ;
+
+  // constructor for TwoButtons
+  public TwoButtons()                           
+  {
+    super( title );
+
+    redButton = new JButton("Red");
+    grnButton = new JButton("Green");
+
+    // choose the layout manager
+    setLayout( new FlowLayout() );
+    add( redButton );                      
+    add( grnButton );                      
+
+
+    // register the buttonDemo frame (this)
+    // as the listener for both JButtons. 
+    redButton.addActionListener( this );
+    grnButton.addActionListener( this ); 
+    
+    setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );   
+  }
+  
+  
+  public void actionPerformed( ActionEvent evt)
+  {
+    getContentPane().setBackground( Color.blue );
+    repaint();
+  }
+
+  public static void main ( String[] args )
+  {
+    TwoButtons demo  = new TwoButtons( "Click a Button") ;
+
+    demo.setSize( 200, 150 );     
+    demo.setVisible( true );      
+
+  }
+}

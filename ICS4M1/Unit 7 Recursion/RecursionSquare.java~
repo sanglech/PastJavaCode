@@ -1,0 +1,19 @@
+public class RecursionSquare
+{
+  public static void main (String[] args)
+  { 
+    int num=square(5);
+    Ssystem.out.println(num);
+  }
+  public int Square(int n)
+  {
+    if (n==1)
+    {
+      return 1;
+    }
+    else
+    {
+      return square(n-1)+2*n-1
+    }
+  }
+}

@@ -1,0 +1,44 @@
+public class SlotMachines
+{ 
+  public static void main (String[] args)
+  { 
+    System.out.println (" How many quarters does Samantha have?");
+    int quarter = ReadLib.readInt();
+    
+    System.out.println ("How many times has the first machine been played since paying out?");
+    int first = ReadLib.readInt();
+    
+    System.out.println ("How many times has the second machine been played since paying out?");
+    int sec = ReadLib.readInt();
+    
+    System.out.println (" How many times has the third machine been played since paying out?");
+    int third = ReadLib.readInt();
+    
+    if ( first%35==0)
+      
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+}
+    

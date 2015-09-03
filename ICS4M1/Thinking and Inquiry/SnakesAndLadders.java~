@@ -1,0 +1,31 @@
+//Christian Sangle
+import java.util.*;
+import java.io.*;
+
+public class SnakesAndLadders
+{
+  public static void main (String [] args)throws IOException
+  {
+    BufferedReader dice = new BufferedReader (new InputStreamReader (System.in));
+    int space=1;
+    int roll=0;
+    
+    while(space<100)
+    {
+     System.out.println("Enter Sum of Dice");
+     roll = Integer.parseInt(dice.readLine ());
+     
+     if(roll>1&&roll<13)
+     {
+       System.out.println("You Lose");
+     }
+     
+     space+=roll;
+     
+     if(space==100)
+     {
+       System.out.println("YOU WIN!");
+     }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Input data from a file
+import java.io.*;
+
+public class TwoDsample2
+{
+    public static void main (String [] args) throws IOException
+    {
+        BufferedReader tdnames = new BufferedReader (new FileReader ("names.txt"));
+
+        String names [] [] = new String [3] [4];
+
+        for (int t = 0 ; t < 3 ; t++)
+        {
+            System.out.print ("\n");
+
+            for (int i = 0 ; i < 4 ; i++)
+            {
+                names [t] [i] = tdnames.readLine ();
+                System.out.print (names [t] [i] + " \t");
+            }
+        }
+    } // main method
+} // TwoDsample2 class
+

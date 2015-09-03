@@ -1,0 +1,44 @@
+public class InsertionSort2
+{
+  public static void main (String[] args)
+  {
+    String a[] = {"Q", "K", 6};
+        
+    int x = insertion (a);
+    
+    for (int i = 0 ; i < a.length ; i++)
+    {
+      System.out.print (a [i] + " ");
+    }       
+  } // main method
+  
+  public static int insertion (int a[]) 
+  {
+    int index = 0;
+    int itemToInsert;
+    
+    // for every element except the leftmost one
+    // insert it where it belongs in the sorted segment
+    
+    for(int i = 1; i < a.length; i++)
+    {
+      itemToInsert = a[i];
+      index = i;
+      
+      // walk down from the current poistion (i) 
+      // shifting up every element larger than itemToInsert
+      
+      while((index >= 1) && (itemToInsert < a[index -1]))
+      {
+        a[index] = a [index - 1];
+        index--;
+      }
+      
+      // now we know where itemToInsert belongs, so put it there
+      a[index] =  itemToInsert;   
+    }  
+    
+    return a[index];
+    
+  } // insertion method
+} // Insertion Sort class

@@ -1,0 +1,39 @@
+import java.io.*;
+public class DealOrNoDeal
+{
+  public static void main (String [] args) throws IOException
+  {
+    BufferedReader bcase = new BufferedReader (new InputStreamReader (System.in));
+    int pick;
+    int myCase;
+    boolean deal=false
+    int briefcase[10];
+    briefcase[1]=100;
+    briefcase[2]=500;
+    briefcase[3]=1000;
+    briefcase[4]=5000;
+    briefcase[5]=10000;
+    briefcase[6]=25000;
+    briefcase[7]=50000;
+    briefcase[8]=100000;
+    briefcase[9]=500000;
+    briefcase[10]=1000000;
+    
+    System.out.println("Please Choose a briefcase from 1 to 10");
+    pick=Integer.parseInt(bcase.readLine());
+    
+    myCase=briefcase[pick];
+    
+    if(pick>10||pick<1)
+    {
+      System.out.println("FAIL");
+    }
+    for (int n=1; n<briefcase.length||!deal; n++)
+    {
+      System.out.println("Please choose a breifcase");
+      
+    }
+    
+  }
+}
+    

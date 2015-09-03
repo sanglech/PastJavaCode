@@ -1,0 +1,32 @@
+public class ProblemSetTwo
+{ 
+  public static void main (String[] args)
+  { 
+    System.out.println (" Enter your income for a year");
+  double income = ReadLib.readDouble();
+  
+  double taxOne = 0.17;
+  double taxTwo = 0.24;
+  double taxThree = 0.29;
+  
+  if ( income <= 120000 && income > 0 )
+    
+  { if (income <= 27500) 
+  { double fina1 = income * 0.17;
+  System.out.println (" You will owe" + fina1);
+  }
+  if (income >= 27500 && income <= 55000)
+    
+    double finalz = (income - 27500)*0.24 + fina1;
+     { System.out.println (" You will owe" + finalz);
+  }
+    if ( income > 55000)
+    
+    double finals = (income - 55000) *0.29 + fina1;
+     { System.out.println (" You will owe" + finals);
+  }
+    
+     else
+     {System.out.pirintln ( "lolcat");
+     }
+    

@@ -1,0 +1,23 @@
+import java.io.*;
+public class Calendar
+{ 
+  public static void main (String [] args) throws IOException
+  {
+    BufferedReader num = new BufferedReader (new InputStreamReader (System.in));
+    
+    System.out.println("Enter day");
+    int day = Integer.parseInt(num.readLine ());
+    
+     System.out.println("Enter the number of days in the month");
+    int month = Integer.parseInt(num.readLine ());
+    
+    for(int i=day; day<month;day+=0)
+    {
+      day++;
+      if(day%7==0)
+      {
+        Sytem.out.println("/n");
+      }
+    }
+  }
+}

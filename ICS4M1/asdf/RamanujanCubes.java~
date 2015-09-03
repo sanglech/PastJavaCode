@@ -1,0 +1,63 @@
+import java.io.*;
+public class RamanujanCubes
+{
+  public static void main ( String[] args) throws IOException
+  {
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in)); 
+    System.out.println ("Enter a number:") ;
+    int arga = Integer.parseInt(input.readLine()) ;
+    System.out.println ("Enter a number:") ;
+    int argb = Integer.parseInt(input.readLine()) ;
+    CalcCube calc = new CalcCube();
+    int a = 0 ;
+    int b = 0 ;
+    int c = 0 ;
+    int ctr = 0 ;
+    int result = calc.Cube ( arga , argb , a, b , c , ctr) ;
+    System.out.println (result) ;
+    
+  }
+}
+
+class CalcCube
+{
+  public int Cube(int arga , int argb , int a, int b ,int  c , int ctr)
+  {
+    int cube = (a*a*a) + (b*b*b) + (c*c*c) - (arga*arga*arga) ;
+    if ( arga != argb)
+    {
+      if (cube != 0)
+      {
+        if ( c == 9)
+        {
+          c = 0 ;
+        } 
+        else
+        {
+          c++ ; 
+        }
+        if ( c == 0 )
+        {
+          b++ ; 
+        }
+        if ( b == 9)
+        {
+          b = 0; 
+        }
+        if ( b == 0)
+        {
+          a++ ; 
+        } 
+        return Cube ( arga , argb , a, b , c , ctr) ;
+      }
+      else if ( cube == 0)
+      {
+        ctr++ ;
+        arga++ ; 
+        return Cube ( arga , argb , a, b , c , ctr) ;
+      }   
+    }
+    else
+    return ctr ;
+  }  
+}

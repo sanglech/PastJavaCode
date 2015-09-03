@@ -1,0 +1,22 @@
+public class MyFirstProblem
+{ 
+  public static void main
+    
+  { int length = 4; // 4 is assigned to length
+  double width = 5.6; // 5.5 is assigned to width
+    char letters = 'z';
+    string object = "Cat";
+    boolean flag = False;
+    
+    
+    
+    double perimeter = 2(length) + 2(width)
+      
+     System.out.println ("The Perimeter is" + double perimeter);
+    
+  } 
+    
+    
+    
+    
+}

@@ -1,0 +1,51 @@
+public class TaxDemo
+{ 
+  public static void main (String[] args)
+  { System.out.println ( " Enter your income ");
+    int income = ReadLib.readInt();
+    
+    System.out.println ( "Enter your housing cost ");
+    int houseCost = ReadLib.readInt();
+    
+    System.out.println ( "Enter how many childern you have");
+    int totalChildern = ReadLib.readInt();
+    
+    System.out.println ( "Enter how many childern you have going to school");
+    int schoolChildern = ReadLib.readInt();
+    
+    double richIncome ;
+    double mainTax = 0.18;
+    double poorIncome ;
+    int childTax ;
+     int schoolTax ;
+    double finalIncome ;
+     double finalzIncome ;
+     
+    if (houseCost <= 8000)
+    {
+      poorIncome = (income - 10000) * mainTax;
+    }
+    if (houseCost > 8000)
+    {
+      richIncome = (income - 10000) * mainTax;
+    }
+    else if (6000 > houseCost && totalChildern >= 2 && schoolChildern >= 1)
+    {
+     childTax = (totalChildern - schoolChildern) * 500;
+     schoolTax =  schoolChildern * 1000;
+    }
+   if richIncome + childTax + schoolTax <= 2000
+    {
+      finalIncome = (richIncome + childTax + schoolTax) *0.18;
+    }
+      if (poorIncome + childTax + schoolTax <= 2000)
+    {
+      finalzIncome= (poorIncome + childTax + schoolTax)* 0.18;
+    }
+  else
+    System.out.println (" lolcat");
+  }
+}
+
+
+

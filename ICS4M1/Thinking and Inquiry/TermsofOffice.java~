@@ -1,0 +1,10 @@
+import java.io.*;
+public class TermsofOffice
+{
+  public static void main (String [] args) throws IOException
+  {
+    BufferedReader office = new BufferedReader (new InputStreamReader (System.in));
+    System.out.println("Enter Your current year.");
+    int number = parseInt.readLine();
+  }
+}
